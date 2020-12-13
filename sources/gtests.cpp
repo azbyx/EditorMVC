@@ -6,6 +6,7 @@
 #include "../headers/view.h"
 #include "../headers/model.h"
 #include "../headers/painter.h"
+#include "gtest/gtest.h"
 #include "gmock/gmock.h"
 #include <memory>
 
@@ -34,7 +35,7 @@ class MockControllerI : public IController {
     std::shared_ptr<IView>  controllerView;
 };
 
-
+/*
 class MockPainterI : public IPainter {
   public:
     void drawDelimeter(const std::string&) const {};
@@ -47,7 +48,7 @@ class MockPainterI : public IPainter {
 
     void drawCircle(const point&, const int&) const {};
 };
-
+*/
 TEST(controller_test, interface_test) {
 
     using ::testing::AtLeast;
