@@ -1,0 +1,7 @@
+digraph "IPrimitiveObject"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{IPrimitiveObject\n||+ draw()\l+ set_end()\l+ set_radius()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Here is interface is common for all primitive objects."];
+}

@@ -1,0 +1,9 @@
+digraph "MockControllerI"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{MockControllerI\n||+ MockControllerI()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l+ MOCK_METHOD()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip=" "];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{IController\n||+ IController()\l+ ~IController()\l+ commandClear()\l+ commandNewPoint()\l+ commandNewLine()\l+ commandNewCircle()\l+ commandRemoveShape()\l+ commandOpenSuite()\l+ commandSaveSuite()\l+ loop()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_controller.html",tooltip="Here is controlls the model."];
+}

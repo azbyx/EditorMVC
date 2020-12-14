@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>MVC: Класс Controller</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">MVC
+   &#160;<span id="projectnumber">0.0.1</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="class_controller-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс Controller</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="controller_8h_source.html">controller.h</a>&gt;</code></p>
+<div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф наследования:Controller:</div>
+<div id="dynsection-0-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-0-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_controller__inherit__graph.png" border="0" usemap="#_controller_inherit__map" alt="Inheritance graph"/></div>
+</div>
+<div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
+  <img id="dynsection-1-trigger" src="closed.png" alt="+"/> Граф связей класса Controller:</div>
+<div id="dynsection-1-summary" class="dynsummary" style="display:block;">
+</div>
+<div id="dynsection-1-content" class="dyncontent" style="display:none;">
+<div class="center"><img src="class_controller__coll__graph.png" border="0" usemap="#_controller_coll__map" alt="Collaboration graph"/></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ab510bcc22fb8d16c1582ee837752bad3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ab510bcc22fb8d16c1582ee837752bad3">Controller</a> (std::shared_ptr&lt; <a class="el" href="class_i_model.html">IModel</a> &gt;, std::shared_ptr&lt; <a class="el" href="class_i_view.html">IView</a> &gt;)</td></tr>
+<tr class="separator:ab510bcc22fb8d16c1582ee837752bad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d16a7a97c266dc0d5aa5685c4dcdd89"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a8d16a7a97c266dc0d5aa5685c4dcdd89">~Controller</a> ()=default</td></tr>
+<tr class="separator:a8d16a7a97c266dc0d5aa5685c4dcdd89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebcfeac53590f58518c55b7959b5f54f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#aebcfeac53590f58518c55b7959b5f54f">commandClear</a> () override</td></tr>
+<tr class="memdesc:aebcfeac53590f58518c55b7959b5f54f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clearing current model.  <a href="class_controller.html#aebcfeac53590f58518c55b7959b5f54f">Подробнее...</a><br /></td></tr>
+<tr class="separator:aebcfeac53590f58518c55b7959b5f54f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1bb7f7b17b28b31069b126433b0e42a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ad1bb7f7b17b28b31069b126433b0e42a">commandNewPoint</a> (const <a class="el" href="classpoint.html">point</a> &amp;) override</td></tr>
+<tr class="memdesc:ad1bb7f7b17b28b31069b126433b0e42a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds shape point to current model.  <a href="class_controller.html#ad1bb7f7b17b28b31069b126433b0e42a">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad1bb7f7b17b28b31069b126433b0e42a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5627676e810f982672d3acc6d118f12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#af5627676e810f982672d3acc6d118f12">commandNewLine</a> (const <a class="el" href="classpoint.html">point</a> &amp;, const <a class="el" href="classdot.html">dot</a> &amp;) override</td></tr>
+<tr class="memdesc:af5627676e810f982672d3acc6d118f12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds shape line to current model.  <a href="class_controller.html#af5627676e810f982672d3acc6d118f12">Подробнее...</a><br /></td></tr>
+<tr class="separator:af5627676e810f982672d3acc6d118f12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53037da3cb50bba696b954193fa2e056"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a53037da3cb50bba696b954193fa2e056">commandNewCircle</a> (const <a class="el" href="classpoint.html">point</a> &amp;, const int &amp;) override</td></tr>
+<tr class="memdesc:a53037da3cb50bba696b954193fa2e056"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds shape circle to current model.  <a href="class_controller.html#a53037da3cb50bba696b954193fa2e056">Подробнее...</a><br /></td></tr>
+<tr class="separator:a53037da3cb50bba696b954193fa2e056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19b17a149c8eb64334838a920f04cdd3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#a19b17a149c8eb64334838a920f04cdd3">commandRemoveShape</a> () override</td></tr>
+<tr class="memdesc:a19b17a149c8eb64334838a920f04cdd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes last shape from current model.  <a href="class_controller.html#a19b17a149c8eb64334838a920f04cdd3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a19b17a149c8eb64334838a920f04cdd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad354d438badf3276def5f5f564a961b2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ad354d438badf3276def5f5f564a961b2">commandOpenSuite</a> (const std::string &amp;) override</td></tr>
+<tr class="memdesc:ad354d438badf3276def5f5f564a961b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">loads the model from file  <a href="class_controller.html#ad354d438badf3276def5f5f564a961b2">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad354d438badf3276def5f5f564a961b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee15a8ba04612aceb668b0ef7d54923a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#aee15a8ba04612aceb668b0ef7d54923a">commandSaveSuite</a> (const std::string &amp;) override</td></tr>
+<tr class="memdesc:aee15a8ba04612aceb668b0ef7d54923a"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves the model to file  <a href="class_controller.html#aee15a8ba04612aceb668b0ef7d54923a">Подробнее...</a><br /></td></tr>
+<tr class="separator:aee15a8ba04612aceb668b0ef7d54923a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5c20405dc59d151ba17b78b31c366de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_controller.html#ae5c20405dc59d151ba17b78b31c366de">loop</a> () override</td></tr>
+<tr class="memdesc:ae5c20405dc59d151ba17b78b31c366de"><td class="mdescLeft">&#160;</td><td class="mdescRight">starts processing user commands  <a href="class_controller.html#ae5c20405dc59d151ba17b78b31c366de">Подробнее...</a><br /></td></tr>
+<tr class="separator:ae5c20405dc59d151ba17b78b31c366de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_class_i_controller"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_i_controller')"><img src="closed.png" alt="-"/>&#160;Открытые члены унаследованные от <a class="el" href="class_i_controller.html">IController</a></td></tr>
+<tr class="memitem:a2ecbcc09257cd3feafb12bc55caeda56 inherit pub_methods_class_i_controller"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_controller.html#a2ecbcc09257cd3feafb12bc55caeda56">IController</a> ()=default</td></tr>
+<tr class="separator:a2ecbcc09257cd3feafb12bc55caeda56 inherit pub_methods_class_i_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbe8a8556fee242cfdb0cc251ebd1a81 inherit pub_methods_class_i_controller"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_controller.html#adbe8a8556fee242cfdb0cc251ebd1a81">~IController</a> ()=default</td></tr>
+<tr class="separator:adbe8a8556fee242cfdb0cc251ebd1a81 inherit pub_methods_class_i_controller"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Конструктор(ы)</h2>
+<a id="ab510bcc22fb8d16c1582ee837752bad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab510bcc22fb8d16c1582ee837752bad3">&#9670;&nbsp;</a></span>Controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Controller::Controller </td>
+          <td>(</td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_i_model.html">IModel</a> &gt;&#160;</td>
+          <td class="paramname"><em>model</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::shared_ptr&lt; <a class="el" href="class_i_view.html">IView</a> &gt;&#160;</td>
+          <td class="paramname"><em>view</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d16a7a97c266dc0d5aa5685c4dcdd89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d16a7a97c266dc0d5aa5685c4dcdd89">&#9670;&nbsp;</a></span>~Controller()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual Controller::~Controller </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="aebcfeac53590f58518c55b7959b5f54f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aebcfeac53590f58518c55b7959b5f54f">&#9670;&nbsp;</a></span>commandClear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandClear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clearing current model. </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#a1f98d5d6863f8e2690a6cb3df774076a">IController</a>.</p>
+
+</div>
+</div>
+<a id="a53037da3cb50bba696b954193fa2e056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53037da3cb50bba696b954193fa2e056">&#9670;&nbsp;</a></span>commandNewCircle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandNewCircle </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpoint.html">point</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds shape circle to current model. </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#ae42d688adda53af55f9f5590b082e484">IController</a>.</p>
+
+</div>
+</div>
+<a id="af5627676e810f982672d3acc6d118f12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5627676e810f982672d3acc6d118f12">&#9670;&nbsp;</a></span>commandNewLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandNewLine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpoint.html">point</a> &amp;&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classdot.html">dot</a> &amp;&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds shape line to current model. </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#aaa69f5579cfacfef5c9c5c2ecd260606">IController</a>.</p>
+
+</div>
+</div>
+<a id="ad1bb7f7b17b28b31069b126433b0e42a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1bb7f7b17b28b31069b126433b0e42a">&#9670;&nbsp;</a></span>commandNewPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandNewPoint </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpoint.html">point</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Adds shape point to current model. </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#aad87d875aca694d66ae7fca9bf3096c7">IController</a>.</p>
+
+</div>
+</div>
+<a id="ad354d438badf3276def5f5f564a961b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad354d438badf3276def5f5f564a961b2">&#9670;&nbsp;</a></span>commandOpenSuite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandOpenSuite </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>loads the model from file </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#a2a2e3cc16a28f664de4f50d133259c8c">IController</a>.</p>
+
+</div>
+</div>
+<a id="a19b17a149c8eb64334838a920f04cdd3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19b17a149c8eb64334838a920f04cdd3">&#9670;&nbsp;</a></span>commandRemoveShape()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandRemoveShape </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes last shape from current model. </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#aa924b5e9fe136786e59f1452c1b15568">IController</a>.</p>
+
+</div>
+</div>
+<a id="aee15a8ba04612aceb668b0ef7d54923a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee15a8ba04612aceb668b0ef7d54923a">&#9670;&nbsp;</a></span>commandSaveSuite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::commandSaveSuite </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>saves the model to file </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#a14dae44f921428076452998af6a5f5d5">IController</a>.</p>
+
+</div>
+</div>
+<a id="ae5c20405dc59d151ba17b78b31c366de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5c20405dc59d151ba17b78b31c366de">&#9670;&nbsp;</a></span>loop()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Controller::loop </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>starts processing user commands </p>
+
+<p>Замещает <a class="el" href="class_i_controller.html#a3cb948ab96ea3bfd67b7026b5f3cf4ea">IController</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов классов находятся в файлах:<ul>
+<li>headers/<a class="el" href="controller_8h_source.html">controller.h</a></li>
+<li>sources/<a class="el" href="controller_8cpp.html">controller.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>

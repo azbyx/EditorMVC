@@ -1,0 +1,15 @@
+digraph "IFactory"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{IFactory\n||+ IFactory()\l+ ~IFactory()\l+ create()\l+ create()\l+ create()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Here is primitive objects factory."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{BaseFactory\n||+ BaseFactory()\l+ ~BaseFactory()\l+ create()\l+ create()\l+ create()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_base_factory.html",tooltip=" "];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{CircleFactory\n||+ CircleFactory()\l+ create()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_circle_factory.html",tooltip=" "];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node4 [label="{LineFactory\n||+ LineFactory()\l+ create()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_line_factory.html",tooltip=" "];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node5 [label="{PointFactory\n||+ PointFactory()\l+ create()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_point_factory.html",tooltip=" "];
+}

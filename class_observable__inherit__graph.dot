@@ -1,0 +1,11 @@
+digraph "Observable"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="{Observable\n||+ Observable()\l+ ~Observable()\l+ subscribe()\l+ unsubscribe()\l+ notifyUpdate()\l}",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Here is doing monitoring."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node2 [label="{IModel\n||+ ~IModel()\l+ newModel()\l+ openModel()\l+ saveModel()\l+ addPoint()\l+ addLine()\l+ addCircle()\l+ removeLast()\l+ draw()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_i_model.html",tooltip="Here is model for keeping primitive objects."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",arrowtail="onormal",fontname="Helvetica"];
+  Node3 [label="{Model\n||+ Model()\l+ ~Model()\l+ newModel()\l+ saveModel()\l+ openModel()\l+ addPoint()\l+ addLine()\l+ addCircle()\l+ removeLast()\l+ draw()\l}",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_model.html",tooltip="There is class of model of the graphic editor."];
+}
