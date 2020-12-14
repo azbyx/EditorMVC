@@ -2,16 +2,20 @@ language: cpp
 dist: focal
 matrix:
     include:
-        - env: TARGET=MVC
+    - env: TARGET=MVC
+addons:
+ apt:
+  packages:
+  - doxygen
 before_script:
-- cd ../doxygen
-- sudo apt install graphviz -y
-- sudo apt install ./doxygen_1.8.19_amd64.deb
-- doxygen --version
-- cd ..
+ - cd ../doxygen
+ - sudo apt install graphviz -y
+ - sudo apt install ./doxygen_1.8.19_amd64.deb
+ - doxygen --version
+ - cd ..
 script:
-- cmake .
-- cmake --build .
-- cmake --build . --target test
-- cmake --build . --target package
-- doxygen Doxyfile
+ - cmake .
+ - cmake --build .
+ - cmake --build . --target test
+ - cmake --build . --target package
+ - doxygen Doxyfile
