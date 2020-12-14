@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2)
 
-set(NAME_EXECUTABLE "MVCgraphicEditor")
+set(NAME_EXECUTABLE "EditorMVC")
 set(NAME_TEST "tests_mvc")
 set(LIBRARIES controller factory model painter primitives view)
 
