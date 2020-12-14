@@ -1,0 +1,5 @@
+<map id="Observable" name="Observable">
+<area shape="rect" id="node1" title="Here is doing monitoring." alt="" coords="5,5,137,141"/>
+<area shape="rect" id="node2" href="$class_i_model.html" title="Here is model for keeping primitive objects." alt="" coords="9,189,133,384"/>
+<area shape="rect" id="node3" href="$class_model.html" title="There is class of model of the graphic editor." alt="" coords="9,432,133,641"/>
+</map>

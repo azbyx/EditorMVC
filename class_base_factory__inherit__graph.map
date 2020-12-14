@@ -1,0 +1,7 @@
+<map id="BaseFactory" name="BaseFactory">
+<area shape="rect" id="node1" title=" " alt="" coords="153,189,290,325"/>
+<area shape="rect" id="node3" href="$class_circle_factory.html" title=" " alt="" coords="5,373,136,465"/>
+<area shape="rect" id="node4" href="$class_line_factory.html" title=" " alt="" coords="161,373,282,465"/>
+<area shape="rect" id="node5" href="$class_point_factory.html" title=" " alt="" coords="306,373,433,465"/>
+<area shape="rect" id="node2" href="$class_i_factory.html" title="Here is primitive objects factory." alt="" coords="167,5,276,141"/>
+</map>
