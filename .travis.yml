@@ -10,14 +10,14 @@ addons:
 script:
  - cmake .
  - cmake --build .
- - cmake --build . --target test
- - cmake --build . --target package
+# - cmake --build . --target test
+# - cmake --build . --target package
  - doxygen Doxyfile
 deploy:
   - provider: pages
     skip_cleanup: true
     github_token: $GITHUB_TOKEN
-    local_dir: ./html
+    local_dir: ./Documentation/html
     keep_history: true
     on:
       branch: master
