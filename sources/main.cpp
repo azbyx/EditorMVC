@@ -12,21 +12,20 @@
 
 #define NDEBUG
 
-#include "../headers/controller.h"
-#include "../headers/view.h"
-#include "../headers/model.h"
-#include "../headers/painter.h"
+#include "controller.h"
+#include "view.h"
+#include "model.h"
+#include "painter.h"
 
 
 
 int main(int, char**){
 
-    std::shared_ptr<IModel>           model = std::make_shared<Model>();
-    std::shared_ptr<IPainter>       painter = std::make_shared<PainterOfConsole>();
-    std::shared_ptr<IView>             view = std::make_shared<View>(model, painter);
-    std::shared_ptr<IController> controller = std::make_shared<Controller>(model, view);
+    IModelSptr           model = std::make_shared<Model>();
+    IPainterSptr       painter = std::make_shared<PainterOfConsole>();
+    IViewSptr             view = std::make_shared<View>(model, painter);
+    IControllerSptr controller = std::make_shared<Controller>(model, view);
 
-    //controller->commandOpenSuite("anyName");
     controller->loop();
 
     return 0;

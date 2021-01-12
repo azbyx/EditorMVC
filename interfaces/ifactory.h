@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../interfaces/iprimitive.h"
+#include "iprimitive.h"
 
 /**
  * \interface IFactory
@@ -13,17 +13,17 @@ class IFactory {
     virtual ~IFactory() = default;
 
     /**
-    * @brief Creates point primitive
+    * @brief Creates Point primitive
     */
-    virtual std::unique_ptr<IPrimitiveObject> create(const point&) const = 0;
+    virtual std::unique_ptr<IPrimitiveObject> create(const Point&) const = 0;
 
     /**
     * @brief Creates line primitive
     */
-    virtual std::unique_ptr<IPrimitiveObject> create(const point&, const dot&) const = 0;
+    virtual std::unique_ptr<IPrimitiveObject> create(const Point&, const Point&) const = 0;
 
     /**
     * @brief Creates circle primitive
     */
-    virtual std::unique_ptr<IPrimitiveObject> create(const point&, const int&) const = 0;
+    virtual std::unique_ptr<IPrimitiveObject> create(const Point&, const int&) const = 0;
 };

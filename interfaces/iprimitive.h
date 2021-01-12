@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../interfaces/ipainter.h"
+#include "ipainter.h"
 #include <memory>
 
 /**
@@ -16,9 +16,9 @@ class IPrimitiveObject {
     virtual void draw(std::shared_ptr<IPainter>) const = 0;
 
     /*!
-        @brief sets end point of line primitive objects
+        @brief sets end Point of line primitive objects
     */
-    virtual void set_end(const dot&) = 0;
+    virtual void set_end(const Point&) = 0;
 
      /*!
         @brief sets radius of circle primitive objects

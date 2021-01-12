@@ -1,8 +1,19 @@
-#include "../headers/controller.h"
+#include "controller.h"
 #include <iostream>
+#include <stdexcept>
 
-Controller::Controller(std::shared_ptr<IModel> model, std::shared_ptr<IView> view)
+Controller::Controller(IModelSptr model, IViewSptr view)
         : controllerModel(model), controllerView(view) {
+    if(model)
+        controllerModel = model;
+    else
+        throw std::runtime_error("Model mustn't nullptr");
+
+    if(view)
+        controllerView = view;
+    else
+        throw std::runtime_error("View mustn't nullptr");
+
     controllerModel->subscribe(controllerView);
     controllerModel->notifyUpdate();
 }
@@ -13,19 +24,19 @@ void Controller::commandClear() {
     controllerModel->notifyUpdate();
 }
 
-void Controller::commandNewPoint(const point& location) {
+void Controller::commandNewPoint(const Point& location) {
 
     controllerModel->addPoint(location);
     controllerModel->notifyUpdate();
 }
 
-void Controller::commandNewLine(const point& location, const dot& end_dot) {
+void Controller::commandNewLine(const Point& location, const Point& end_dot) {
 
     controllerModel->addLine(location, end_dot);
     controllerModel->notifyUpdate();
 }
 
-void Controller::commandNewCircle(const point& location, const int& radius) {
+void Controller::commandNewCircle(const Point& location, const int& radius) {
 
     controllerModel->addCircle(location, radius);
     controllerModel->notifyUpdate();
@@ -40,9 +51,9 @@ void Controller::commandRemoveShape() {
 void Controller::commandOpenSuite(const std::string& fileName) {
 
     controllerModel->newModel();
-    controllerModel->addPoint(point{100, 258});
-    controllerModel->addLine(point{11, 21}, dot{33, 44});
-    controllerModel->addCircle(point{110, 212}, 99);
+    controllerModel->addPoint(Point{100, 258});
+    controllerModel->addLine(Point{11, 21}, Point{33, 44});
+    controllerModel->addCircle(Point{110, 212}, 99);
     controllerModel->notifyUpdate();
     std::cout << "Current project have been updated from: " << fileName << std::endl;
 }
@@ -57,7 +68,7 @@ bool Controller::readCommand(){
     std::string str_command;
     int x = 0, y = 0, xe = 0, ye = 0;
 
-    std::cout << "input command: (ap: add point; al: add line; ac: add circle; rm: remove last object;\nclr: clear model; opn: open doc; sav: save doc; exit: exited from this)\n>";
+    std::cout << "input command: (ap: add Point; al: add line; ac: add circle; rm: remove last object;\nclr: clear model; opn: open doc; sav: save doc; exit: exited from this)\n>";
     std::cin >> str_command;
 
     if("exit" == str_command){
@@ -69,7 +80,7 @@ bool Controller::readCommand(){
         std::cout << "input locatoin - x and y: ";
         std::cin >> x >> y;
         //TODO validate
-        commandNewPoint(point{x, y});
+        commandNewPoint(Point{x, y});
 
         return true;
     }
@@ -78,7 +89,7 @@ bool Controller::readCommand(){
         std::cout << "input locatoin - x and y and radius: ";
         std::cin >> x >> y >> xe;
         //TODO validate
-        commandNewCircle(point{x, y}, xe);
+        commandNewCircle(Point{x, y}, xe);
 
         return true;
     }
@@ -88,7 +99,7 @@ bool Controller::readCommand(){
 
         std::cin >> x >> y >> xe >> ye;
         //TODO validate
-        commandNewLine(point{x, y}, dot{xe, ye});
+        commandNewLine(Point{x, y}, Point{xe, ye});
 
         return true;
     }

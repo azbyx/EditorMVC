@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 set(NAME_EXECUTABLE "EditorMVC")
 set(NAME_TEST "tests_mvc")
+set(PATHES headers/ interfaces/)
 set(LIBRARIES controller factory model painter primitives view)
 
 if($ENV{TRAVIS_BUILD_NUMBER})
@@ -23,11 +24,21 @@ add_library(painter    ./sources/painter.cpp)
 add_library(primitives ./sources/primitives.cpp)
 add_library(view       ./sources/view.cpp)
 
+target_include_directories(controller PRIVATE ${PATHES})
+target_include_directories(factory PRIVATE ${PATHES})
+target_include_directories(model PRIVATE ${PATHES})
+target_include_directories(painter PRIVATE ${PATHES})
+target_include_directories(primitives PRIVATE ${PATHES})
+target_include_directories(view PRIVATE ${PATHES})
+target_include_directories(${NAME_EXECUTABLE} PRIVATE ${PATHES})
+
 target_link_libraries(${NAME_EXECUTABLE} PRIVATE ${LIBRARIES})
 
 add_executable(${NAME_TEST} ./sources/gtests.cpp)
 
 target_link_libraries(${NAME_TEST} PRIVATE gmock ${LIBRARIES})
+
+target_include_directories(${NAME_TEST} PRIVATE ${PATHES})
 
 set_target_properties(${NAME_EXECUTABLE} PROPERTIES
     CXX_STANDARD 17

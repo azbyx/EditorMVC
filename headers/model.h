@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../headers/registry.h"
-#include "../interfaces/imodel.h"
+#include "registry.h"
+#include "imodel.h"
 
 /**
 	\brief There is class of model of the graphic editor.
@@ -15,47 +15,47 @@ class Model : public IModel {
     /*!
         @brief Create new suite
     */
-    virtual void newModel() override;
+    void newModel() override;
 
     /*!
         @brief Save suite
     */
-    virtual void saveModel() override;
+    void saveModel() override;
 
     /*!
         @brief Open new suite
         @param[in] file_path_name
     */
-    virtual void openModel(std::string&) override;
+    void openModel(std::string&) override;
 
     /*!
-        @brief Add point to suite
-        @param[in] point
+        @brief Add Point to suite
+        @param[in] Point
     */
-    virtual void addPoint(const point&) override;
+    void addPoint(const Point&) override;
 
     /*!
         @brief Add line to suite
-        @param[in] point, dot
+        @param[in] Point, Point
     */
-    virtual void addLine(const point&, const dot&) override;
+    void addLine(const Point&, const Point&) override;
 
     /*!
         @brief Add circle to suite
-        @param[in] point, dot
+        @param[in] Point, Point
     */
-    virtual void addCircle(const point&, const int&) override;
+    void addCircle(const Point&, const int&) override;
 
     /*!
         @brief Removes last shape from suite
     */
-    virtual void removeLast() override;
+    void removeLast() override;
 
     /*!
         @brief Draw all primitive from suite
         @param[in] IPainter
     */
-    virtual void draw(std::shared_ptr<IPainter>) const override;
+    void draw(std::shared_ptr<IPainter>) const override;
 
 private:
     std::list<std::unique_ptr<IPrimitiveObject>> keeperObjects;

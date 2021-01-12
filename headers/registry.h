@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../headers/factory.h"
+#include "factory.h"
 #include <map>
 
 struct RegistryObjects {

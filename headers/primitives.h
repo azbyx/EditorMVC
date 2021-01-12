@@ -1,47 +1,47 @@
 #pragma once
 
 #include <iostream>
-#include "../interfaces/iprimitive.h"
+#include "iprimitive.h"
 
 
 class PrimitiveObject : public IPrimitiveObject {
   public:
     void draw(std::shared_ptr<IPainter>) const override;
-    void set_end(const dot&) override;
+    void set_end(const Point&) override;
     void set_radius(const int&) override;
 
-    PrimitiveObject(const point&);
+    PrimitiveObject(const Point&);
 
     virtual ~PrimitiveObject() = default;
 
-    void set_location(const point&);
+    void set_location(const Point&);
 
   protected:
-    point location;
+    Point location;
 };
 
 class PointPrimitive : public PrimitiveObject {
   public:
-    PointPrimitive(const point&);
+    PointPrimitive(const Point&);
 
     void draw(std::shared_ptr<IPainter>) const override;
 };
 
 class LinePrimitive : public PrimitiveObject {
   public:
-    LinePrimitive(const point&, const dot&);
+    LinePrimitive(const Point&, const Point&);
 
-    void set_end(const dot&) override;
+    void set_end(const Point&) override;
 
     void draw(std::shared_ptr<IPainter>) const override;
 
   private:
-    dot end_dot;
+    Point end_dot;
 };
 
 class CirclePrimitive : public PrimitiveObject {
   public:
-    CirclePrimitive(const point&, const int&);
+    CirclePrimitive(const Point&, const int&);
 
     void set_radius(const int&) override;
 

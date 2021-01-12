@@ -16,3 +16,5 @@ public:
     virtual void update() const noexcept = 0;
 
 };
+
+using IViewSptr = std::shared_ptr<IView>;

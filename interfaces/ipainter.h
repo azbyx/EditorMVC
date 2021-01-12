@@ -1,7 +1,8 @@
 #pragma once
 
-#include "../headers/base_types.h"
+#include "base_types.h"
 #include <string>
+#include <memory>
 
 /**
  * \interface IPainter
@@ -25,15 +26,17 @@ class IPainter {
     /*!
         @brief Draw points
     */
-    virtual void drawPoint(const point&) const = 0;
+    virtual void drawPoint(const Point&) const = 0;
 
     /*!
         @brief Draw lines
     */
-    virtual void drawLine(const point&, const dot&) const = 0;
+    virtual void drawLine(const Point&, const Point&) const = 0;
 
     /*!
         @brief Draw circles
     */
-    virtual void drawCircle(const point&, const int&) const = 0;
+    virtual void drawCircle(const Point&, const int&) const = 0;
 };
+
+using IPainterSptr = std::shared_ptr<IPainter>;

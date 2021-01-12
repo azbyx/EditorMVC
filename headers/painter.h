@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../headers/base_types.h"
-#include "../interfaces/ipainter.h"
+#include "base_types.h"
+#include "ipainter.h"
 
 class PainterOfConsole : public IPainter {
   public:
@@ -9,10 +9,10 @@ class PainterOfConsole : public IPainter {
 
     void drawText(const std::string&) const override;
 
-    void drawPoint(const point&) const override;
+    void drawPoint(const Point&) const override;
 
-    void drawLine(const point&, const dot&) const override;
+    void drawLine(const Point&, const Point&) const override;
 
-    void drawCircle(const point&, const int&) const override;
+    void drawCircle(const Point&, const int&) const override;
 };
 

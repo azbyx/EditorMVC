@@ -1,8 +1,17 @@
-#include "../headers/view.h"
+#include "view.h"
+#include <stdexcept>
 
+View::View(IModelSptr model, IPainterSptr painter) {
+    if(model)
+        viewModel = model;
+    else
+        throw std::runtime_error("Model mustn't nullptr");
 
-View::View(std::shared_ptr<IModel> model, std::shared_ptr<IPainter> painter)
-           : viewModel(model), viewPainter(painter) {}
+    if(painter)
+        viewPainter = painter;
+    else
+        throw std::runtime_error("Painter mustn't nullptr");
+}
 
 void View::update() const noexcept {
     viewModel->draw(viewPainter);

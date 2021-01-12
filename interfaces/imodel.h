@@ -1,7 +1,8 @@
 #pragma once
 
-#include "../interfaces/iprimitive.h"
-#include "../headers/observable.h"
+#include <memory>
+#include "iprimitive.h"
+#include "observable.h"
 
 
 /**
@@ -30,22 +31,22 @@ class IModel : public Observable {
     virtual void saveModel() = 0;
 
     /*!
-        @brief Add point to suite
-        @param[in] point
+        @brief Add Point to suite
+        @param[in] Point
     */
-    virtual void addPoint(const point&) = 0;
+    virtual void addPoint(const Point&) = 0;
 
     /*!
         @brief Add line to suite
-        @param[in] point, dot
+        @param[in] Point, Point
     */
-    virtual void addLine(const point&, const dot&) = 0;
+    virtual void addLine(const Point&, const Point&) = 0;
 
     /*!
         @brief Add circle to suite
-        @param[in] point, dot
+        @param[in] Point, Point
     */
-    virtual void addCircle(const point&, const int&) = 0;
+    virtual void addCircle(const Point&, const int&) = 0;
 
     /*!
         @brief Removes last shape from suite
@@ -56,6 +57,7 @@ class IModel : public Observable {
         @brief Redraw of suite
         @param[in]  IPainter
     */
-    virtual void draw(std::shared_ptr<IPainter>) const = 0;
+    virtual void draw(IPainterSptr) const = 0;
 };
 
+using IModelSptr = std::shared_ptr<IModel>;

@@ -1,24 +1,24 @@
 #pragma once
 
-#include "../interfaces/icontroller.h"
-#include "../interfaces/imodel.h"
-#include "../interfaces/iview.h"
+#include "icontroller.h"
+#include "imodel.h"
+#include "iview.h"
 #include <memory>
 
 class Controller : public IController {
 
 
   public:
-    Controller(std::shared_ptr<IModel>, std::shared_ptr<IView>);
+    Controller(IModelSptr, IViewSptr);
     virtual ~Controller() = default;
 
     void commandClear() override;
 
-    void commandNewPoint(const point&) override;
+    void commandNewPoint(const Point&) override;
 
-    void commandNewLine(const point&, const dot&) override;
+    void commandNewLine(const Point&, const Point&) override;
 
-    void commandNewCircle(const point&, const int&) override;
+    void commandNewCircle(const Point&, const int&) override;
 
     void commandRemoveShape() override;
 
@@ -32,6 +32,6 @@ class Controller : public IController {
     bool readCommand() override;
 
   private:
-    std::shared_ptr<IModel> controllerModel;
-    std::shared_ptr<IView>  controllerView;
+    IModelSptr controllerModel;
+    IViewSptr  controllerView;
 };
