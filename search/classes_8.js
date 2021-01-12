@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['registryobjects_126',['RegistryObjects',['../struct_registry_objects.html',1,'']]]
+  ['view_129',['View',['../class_view.html',1,'']]]
 ];

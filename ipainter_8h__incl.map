@@ -1,6 +1,7 @@
 <map id="interfaces/ipainter.h" name="interfaces/ipainter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="88,5,240,32"/>
-<area shape="rect" id="node2" href="$base__types_8h.html" title=" " alt="" coords="5,80,181,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="205,80,264,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="60,155,127,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="91,5,243,32"/>
+<area shape="rect" id="node2" href="$base__types_8h.html" title=" " alt="" coords="5,80,113,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="138,80,197,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="221,80,298,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="26,155,93,181"/>
 </map>

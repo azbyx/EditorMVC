@@ -1,10 +1,10 @@
 <map id="headers/primitives.h" name="headers/primitives.h">
-<area shape="rect" id="node1" title=" " alt="" coords="82,5,238,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="44,80,124,107"/>
-<area shape="rect" id="node3" href="$iprimitive_8h.html" title=" " alt="" coords="148,80,327,107"/>
-<area shape="rect" id="node4" href="$ipainter_8h.html" title=" " alt="" coords="82,155,246,181"/>
-<area shape="rect" id="node8" title=" " alt="" coords="271,155,348,181"/>
-<area shape="rect" id="node5" href="$base__types_8h.html" title=" " alt="" coords="5,229,181,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="205,229,264,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="60,304,127,331"/>
+<area shape="rect" id="node1" title=" " alt="" coords="80,5,236,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="62,80,142,107"/>
+<area shape="rect" id="node3" href="$iprimitive_8h.html" title=" " alt="" coords="167,80,264,107"/>
+<area shape="rect" id="node4" href="$ipainter_8h.html" title=" " alt="" coords="133,155,215,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="221,229,298,256"/>
+<area shape="rect" id="node5" href="$base__types_8h.html" title=" " alt="" coords="5,229,113,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="138,229,197,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="26,304,93,331"/>
 </map>

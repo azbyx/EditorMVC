@@ -69,5 +69,6 @@ var menudata={children:[
 {text:"Список членов всех файлов",url:"globals.html",children:[
 {text:"Указатель",url:"globals.html"},
 {text:"Функции",url:"globals_func.html"},
+{text:"Определения типов",url:"globals_type.html"},
 {text:"Перечисления",url:"globals_enum.html"},
 {text:"Макросы",url:"globals_defs.html"}]}]}]}

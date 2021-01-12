@@ -67,13 +67,15 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Классы</a>  </div>
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#typedef-members">Определения типов</a>  </div>
   <div class="headertitle">
 <div class="title">Файл imodel.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="iprimitive_8h_source.html">../interfaces/iprimitive.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="observable_8h_source.html">../headers/observable.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;memory&gt;</code><br />
+<code>#include &quot;<a class="el" href="iprimitive_8h_source.html">iprimitive.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="observable_8h_source.html">observable.h</a>&quot;</code><br />
 </div><div class="textblock"><div id="dynsection-0" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Граф включаемых заголовочных файлов для imodel.h:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -81,16 +83,16 @@ $(function() {
 <div id="dynsection-0-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imodel_8h__incl.png" border="0" usemap="#interfaces_2imodel_8h" alt=""/></div>
 <map name="interfaces_2imodel_8h" id="interfaces_2imodel_8h">
-<area shape="rect" title=" " alt="" coords="271,5,419,32"/>
-<area shape="rect" href="iprimitive_8h.html" title=" " alt="" coords="156,80,335,107"/>
-<area shape="rect" href="observable_8h.html" title=" " alt="" coords="359,80,534,107"/>
-<area shape="rect" href="ipainter_8h.html" title=" " alt="" coords="82,155,246,181"/>
-<area shape="rect" title=" " alt="" coords="271,155,348,181"/>
-<area shape="rect" href="base__types_8h.html" title=" " alt="" coords="5,229,181,256"/>
-<area shape="rect" title=" " alt="" coords="205,229,264,256"/>
-<area shape="rect" title=" " alt="" coords="60,304,127,331"/>
-<area shape="rect" href="iview_8h.html" title=" " alt="" coords="372,155,521,181"/>
-<area shape="rect" title=" " alt="" coords="545,155,588,181"/>
+<area shape="rect" title=" " alt="" coords="213,5,361,32"/>
+<area shape="rect" title=" " alt="" coords="239,229,317,256"/>
+<area shape="rect" href="iprimitive_8h.html" title=" " alt="" coords="152,80,249,107"/>
+<area shape="rect" href="observable_8h.html" title=" " alt="" coords="341,80,447,107"/>
+<area shape="rect" href="ipainter_8h.html" title=" " alt="" coords="117,155,199,181"/>
+<area shape="rect" href="base__types_8h.html" title=" " alt="" coords="5,229,113,256"/>
+<area shape="rect" title=" " alt="" coords="138,229,197,256"/>
+<area shape="rect" title=" " alt="" coords="26,304,93,331"/>
+<area shape="rect" href="iview_8h.html" title=" " alt="" coords="376,155,444,181"/>
+<area shape="rect" title=" " alt="" coords="469,155,511,181"/>
 </map>
 </div>
 </div><div class="textblock"><div id="dynsection-1" onclick="return toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
@@ -100,15 +102,15 @@ $(function() {
 <div id="dynsection-1-content" class="dyncontent" style="display:none;">
 <div class="center"><img src="imodel_8h__dep__incl.png" border="0" usemap="#interfaces_2imodel_8hdep" alt=""/></div>
 <map name="interfaces_2imodel_8hdep" id="interfaces_2imodel_8hdep">
-<area shape="rect" title=" " alt="" coords="355,5,503,32"/>
-<area shape="rect" href="controller_8h.html" title=" " alt="" coords="188,80,339,107"/>
-<area shape="rect" href="view_8h.html" title=" " alt="" coords="518,80,638,107"/>
-<area shape="rect" href="model_8h.html" title=" " alt="" coords="363,80,494,107"/>
+<area shape="rect" title=" " alt="" coords="351,5,499,32"/>
+<area shape="rect" href="controller_8h.html" title=" " alt="" coords="189,80,340,107"/>
+<area shape="rect" href="model_8h.html" title=" " alt="" coords="509,80,639,107"/>
+<area shape="rect" href="view_8h.html" title=" " alt="" coords="365,80,485,107"/>
 <area shape="rect" href="controller_8cpp.html" title=" " alt="" coords="5,155,169,181"/>
 <area shape="rect" href="gtests_8cpp.html" title=" " alt="" coords="193,155,336,181"/>
 <area shape="rect" href="main_8cpp.html" title=" " alt="" coords="361,155,497,181"/>
-<area shape="rect" href="view_8cpp.html" title=" " alt="" coords="689,155,822,181"/>
-<area shape="rect" href="model_8cpp.html" title=" " alt="" coords="521,155,665,181"/>
+<area shape="rect" href="model_8cpp.html" title=" " alt="" coords="678,155,822,181"/>
+<area shape="rect" href="view_8cpp.html" title=" " alt="" coords="521,155,654,181"/>
 </map>
 </div>
 </div>
@@ -119,7 +121,27 @@ $(function() {
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_i_model.html">IModel</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Here is model for keeping primitive objects.  <a href="class_i_model.html#details">Подробнее...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
+Определения типов</h2></td></tr>
+<tr class="memitem:a7d8b6fc623d40f17bc4c5ac47db5ab2d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="imodel_8h.html#a7d8b6fc623d40f17bc4c5ac47db5ab2d">IModelSptr</a> = std::shared_ptr&lt; <a class="el" href="class_i_model.html">IModel</a> &gt;</td></tr>
+<tr class="separator:a7d8b6fc623d40f17bc4c5ac47db5ab2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Типы</h2>
+<a id="a7d8b6fc623d40f17bc4c5ac47db5ab2d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d8b6fc623d40f17bc4c5ac47db5ab2d">&#9670;&nbsp;</a></span>IModelSptr</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="imodel_8h.html#a7d8b6fc623d40f17bc4c5ac47db5ab2d">IModelSptr</a> =  std::shared_ptr&lt;<a class="el" href="class_i_model.html">IModel</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

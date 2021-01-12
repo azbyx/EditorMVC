@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['mockcontrolleri_118',['MockControllerI',['../class_mock_controller_i.html',1,'']]],
-  ['model_119',['Model',['../class_model.html',1,'']]]
+  ['observable_122',['Observable',['../class_observable.html',1,'']]]
 ];

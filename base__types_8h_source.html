@@ -74,35 +74,25 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;cstdint&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno"><a class="line" href="classdot.html">    5</a></span>&#160;<span class="keyword">class </span><a class="code" href="classdot.html">dot</a> {</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classdot.html#ab170d86877de6b8e4f7e5aa51394c0b0">    7</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classdot.html#ab170d86877de6b8e4f7e5aa51394c0b0">x_coord</a> = 0;</div>
-<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classdot.html#a863a586ebaee22b781acfbd7adea7405">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classdot.html#a863a586ebaee22b781acfbd7adea7405">y_coord</a> = 0;</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="struct_point.html">    6</a></span>&#160;<span class="keyword">struct </span><a class="code" href="struct_point.html">Point</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="struct_point.html#a1cd66be5f8ad0ca5c6e563a44ec60f45">    7</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_point.html#a1cd66be5f8ad0ca5c6e563a44ec60f45">x_coord</a> = 0;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="struct_point.html#a447c07105d53a64542b4ccd74091fceb">    8</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="struct_point.html#a447c07105d53a64542b4ccd74091fceb">y_coord</a> = 0;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;};</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classpoint.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classpoint.html">point</a> : <span class="keyword">public</span> <a class="code" href="classdot.html">dot</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classpoint.html#a21530dc3320ad8450677d8065c9044ee">   13</a></span>&#160;    <a class="code" href="classpoint.html#a21530dc3320ad8450677d8065c9044ee">point</a>(<span class="keywordtype">int</span> x, <span class="keywordtype">int</span> y) :<a class="code" href="classdot.html">dot</a>{x, y} {}</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classpoint.html#a9a5b327754b5f301bc13f3e6d33bc549">   15</a></span>&#160;    uint32_t <a class="code" href="classpoint.html#a9a5b327754b5f301bc13f3e6d33bc549">color</a> = 0xffffff;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48a">   18</a></span>&#160; <span class="keyword">enum class</span> <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48a">typePrimitive</a> : uint8_t {</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aaaebdbcb765394d25d6a604589a890f82">POINT</a>,</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aa17b8ef2c330f1430e00c9de5469fc7e7">LINE</a>,</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aa0af50777920c1401ab975cab64c4d491">CIRCLE</a></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; };</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48a">   11</a></span>&#160; <span class="keyword">enum class</span> <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48a">typePrimitive</a> : uint8_t {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aaaebdbcb765394d25d6a604589a890f82">POINT</a>,</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aa17b8ef2c330f1430e00c9de5469fc7e7">LINE</a>,</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aa0af50777920c1401ab975cab64c4d491">CIRCLE</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; };</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasspoint_html_a21530dc3320ad8450677d8065c9044ee"><div class="ttname"><a href="classpoint.html#a21530dc3320ad8450677d8065c9044ee">point::point</a></div><div class="ttdeci">point(int x, int y)</div><div class="ttdef"><b>Definition:</b> base_types.h:13</div></div>
-<div class="ttc" id="abase__types_8h_html_a77db75a4f2de32da790822278c51d48a"><div class="ttname"><a href="base__types_8h.html#a77db75a4f2de32da790822278c51d48a">typePrimitive</a></div><div class="ttdeci">typePrimitive</div><div class="ttdef"><b>Definition:</b> base_types.h:18</div></div>
-<div class="ttc" id="aclassdot_html"><div class="ttname"><a href="classdot.html">dot</a></div><div class="ttdef"><b>Definition:</b> base_types.h:5</div></div>
+<div class="ttc" id="astruct_point_html_a1cd66be5f8ad0ca5c6e563a44ec60f45"><div class="ttname"><a href="struct_point.html#a1cd66be5f8ad0ca5c6e563a44ec60f45">Point::x_coord</a></div><div class="ttdeci">int x_coord</div><div class="ttdef"><b>Definition:</b> base_types.h:7</div></div>
+<div class="ttc" id="abase__types_8h_html_a77db75a4f2de32da790822278c51d48a"><div class="ttname"><a href="base__types_8h.html#a77db75a4f2de32da790822278c51d48a">typePrimitive</a></div><div class="ttdeci">typePrimitive</div><div class="ttdef"><b>Definition:</b> base_types.h:11</div></div>
 <div class="ttc" id="abase__types_8h_html_a77db75a4f2de32da790822278c51d48aa17b8ef2c330f1430e00c9de5469fc7e7"><div class="ttname"><a href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aa17b8ef2c330f1430e00c9de5469fc7e7">typePrimitive::LINE</a></div><div class="ttdeci">@ LINE</div></div>
-<div class="ttc" id="aclasspoint_html_a9a5b327754b5f301bc13f3e6d33bc549"><div class="ttname"><a href="classpoint.html#a9a5b327754b5f301bc13f3e6d33bc549">point::color</a></div><div class="ttdeci">uint32_t color</div><div class="ttdef"><b>Definition:</b> base_types.h:15</div></div>
-<div class="ttc" id="aclassdot_html_a863a586ebaee22b781acfbd7adea7405"><div class="ttname"><a href="classdot.html#a863a586ebaee22b781acfbd7adea7405">dot::y_coord</a></div><div class="ttdeci">int y_coord</div><div class="ttdef"><b>Definition:</b> base_types.h:8</div></div>
-<div class="ttc" id="aclasspoint_html"><div class="ttname"><a href="classpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> base_types.h:11</div></div>
+<div class="ttc" id="astruct_point_html_a447c07105d53a64542b4ccd74091fceb"><div class="ttname"><a href="struct_point.html#a447c07105d53a64542b4ccd74091fceb">Point::y_coord</a></div><div class="ttdeci">int y_coord</div><div class="ttdef"><b>Definition:</b> base_types.h:8</div></div>
 <div class="ttc" id="abase__types_8h_html_a77db75a4f2de32da790822278c51d48aa0af50777920c1401ab975cab64c4d491"><div class="ttname"><a href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aa0af50777920c1401ab975cab64c4d491">typePrimitive::CIRCLE</a></div><div class="ttdeci">@ CIRCLE</div></div>
 <div class="ttc" id="abase__types_8h_html_a77db75a4f2de32da790822278c51d48aaaebdbcb765394d25d6a604589a890f82"><div class="ttname"><a href="base__types_8h.html#a77db75a4f2de32da790822278c51d48aaaebdbcb765394d25d6a604589a890f82">typePrimitive::POINT</a></div><div class="ttdeci">@ POINT</div></div>
-<div class="ttc" id="aclassdot_html_ab170d86877de6b8e4f7e5aa51394c0b0"><div class="ttname"><a href="classdot.html#ab170d86877de6b8e4f7e5aa51394c0b0">dot::x_coord</a></div><div class="ttdeci">int x_coord</div><div class="ttdef"><b>Definition:</b> base_types.h:7</div></div>
+<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="struct_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> base_types.h:6</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">

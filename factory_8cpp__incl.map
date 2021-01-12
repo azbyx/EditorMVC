@@ -1,13 +1,13 @@
 <map id="sources/factory.cpp" name="sources/factory.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="195,5,341,32"/>
-<area shape="rect" id="node2" href="$factory_8h.html" title=" " alt="" coords="104,80,251,107"/>
-<area shape="rect" id="node10" href="$primitives_8h.html" title=" " alt="" coords="275,80,443,107"/>
-<area shape="rect" id="node3" href="$ifactory_8h.html" title=" " alt="" coords="96,155,259,181"/>
-<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="147,229,325,256"/>
-<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="82,304,246,331"/>
-<area shape="rect" id="node9" title=" " alt="" coords="271,304,348,331"/>
-<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,379,181,405"/>
-<area shape="rect" id="node8" title=" " alt="" coords="205,379,264,405"/>
-<area shape="rect" id="node7" title=" " alt="" coords="60,453,127,480"/>
-<area shape="rect" id="node11" title=" " alt="" coords="333,155,413,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="157,5,303,32"/>
+<area shape="rect" id="node2" href="$factory_8h.html" title=" " alt="" coords="135,80,213,107"/>
+<area shape="rect" id="node10" href="$primitives_8h.html" title=" " alt="" coords="237,80,337,107"/>
+<area shape="rect" id="node3" href="$ifactory_8h.html" title=" " alt="" coords="133,155,215,181"/>
+<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="164,229,261,256"/>
+<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="133,304,215,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="221,379,298,405"/>
+<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,379,113,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="138,379,197,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="26,453,93,480"/>
+<area shape="rect" id="node11" title=" " alt="" coords="290,155,370,181"/>
 </map>

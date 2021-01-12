@@ -1,5 +1,5 @@
 <map id="IController" name="IController">
-<area shape="rect" id="node1" title="Here is controlls the model." alt="" coords="107,5,313,215"/>
-<area shape="rect" id="node2" href="$class_controller.html" title=" " alt="" coords="5,263,212,472"/>
-<area shape="rect" id="node3" href="$class_mock_controller_i.html" title=" " alt="" coords="237,270,389,465"/>
+<area shape="rect" id="node1" title="Here is controlls the model." alt="" coords="107,5,313,229"/>
+<area shape="rect" id="node2" href="$class_controller.html" title=" " alt="" coords="5,277,212,487"/>
+<area shape="rect" id="node3" href="$class_mock_controller_i.html" title=" " alt="" coords="237,277,389,487"/>
 </map>

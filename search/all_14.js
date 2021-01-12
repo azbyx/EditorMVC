@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['y_5fcoord_93',['y_coord',['../classdot.html#a863a586ebaee22b781acfbd7adea7405',1,'dot']]]
+  ['y_5fcoord_96',['y_coord',['../struct_point.html#a447c07105d53a64542b4ccd74091fceb',1,'Point']]]
 ];

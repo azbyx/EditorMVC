@@ -1,12 +1,12 @@
 <map id="headers/registry.h" name="headers/registry.h">
-<area shape="rect" id="node1" title=" " alt="" coords="228,5,367,32"/>
-<area shape="rect" id="node2" href="$factory_8h.html" title=" " alt="" coords="163,80,309,107"/>
-<area shape="rect" id="node10" title=" " alt="" coords="333,80,384,107"/>
-<area shape="rect" id="node3" href="$ifactory_8h.html" title=" " alt="" coords="155,155,317,181"/>
-<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="147,229,325,256"/>
-<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="82,304,246,331"/>
-<area shape="rect" id="node9" title=" " alt="" coords="271,304,348,331"/>
-<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,379,181,405"/>
-<area shape="rect" id="node8" title=" " alt="" coords="205,379,264,405"/>
-<area shape="rect" id="node7" title=" " alt="" coords="60,453,127,480"/>
+<area shape="rect" id="node1" title=" " alt="" coords="187,5,326,32"/>
+<area shape="rect" id="node2" href="$factory_8h.html" title=" " alt="" coords="173,80,252,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="277,80,327,107"/>
+<area shape="rect" id="node3" href="$ifactory_8h.html" title=" " alt="" coords="171,155,254,181"/>
+<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="164,229,261,256"/>
+<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="133,304,215,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="221,379,298,405"/>
+<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,379,113,405"/>
+<area shape="rect" id="node8" title=" " alt="" coords="138,379,197,405"/>
+<area shape="rect" id="node7" title=" " alt="" coords="26,453,93,480"/>
 </map>

@@ -72,46 +72,51 @@ $(function() {
 <div class="contents">
 <a href="imodel_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../interfaces/iprimitive.h&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../headers/observable.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iprimitive_8h.html">iprimitive.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="observable_8h.html">observable.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="class_i_model.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_model.html">IModel</a> : <span class="keyword">public</span> <a class="code" href="class_observable.html">Observable</a> {</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_i_model.html#aae3da291eb4410de6965ae73da65cd77">~IModel</a>() = <span class="keywordflow">default</span>;</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a41686c26ae5f24972501721084fc5923">newModel</a>() = 0;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a4fbb14206d292e9923aff45b034a775f">openModel</a>(std::string&amp;) = 0;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a8a04ee3e185230cc1d741bb9ac6770dd">saveModel</a>() = 0;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a8b8a487fc4e2e529c5af0489e9145dc3">addPoint</a>(<span class="keyword">const</span> <a class="code" href="classpoint.html">point</a>&amp;) = 0;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#af76cc1b425382625fdb1b2fd0ed55e4e">addLine</a>(<span class="keyword">const</span> <a class="code" href="classpoint.html">point</a>&amp;, <span class="keyword">const</span> <a class="code" href="classdot.html">dot</a>&amp;) = 0;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a1f7e17d6d047d4cdb59cc0037b07c881">addCircle</a>(<span class="keyword">const</span> <a class="code" href="classpoint.html">point</a>&amp;, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp;) = 0;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a2c15210c900f08dc4df86838dc507f7e">removeLast</a>() = 0;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#ab922edb0fd1e1547a4675e8409ab795a">draw</a>(std::shared_ptr&lt;IPainter&gt;) <span class="keyword">const</span> = 0;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;};</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_i_model.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_i_model.html">IModel</a> : <span class="keyword">public</span> <a class="code" href="class_observable.html">Observable</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_i_model.html#aae3da291eb4410de6965ae73da65cd77">~IModel</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a41686c26ae5f24972501721084fc5923">newModel</a>() = 0;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a4fbb14206d292e9923aff45b034a775f">openModel</a>(std::string&amp;) = 0;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a8a04ee3e185230cc1d741bb9ac6770dd">saveModel</a>() = 0;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a7f679b6d0b05da39107b354031195adb">addPoint</a>(<span class="keyword">const</span> <a class="code" href="struct_point.html">Point</a>&amp;) = 0;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a613a00f72758e623d0f523b7dd17b718">addLine</a>(<span class="keyword">const</span> <a class="code" href="struct_point.html">Point</a>&amp;, <span class="keyword">const</span> <a class="code" href="struct_point.html">Point</a>&amp;) = 0;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#ad23d0ce83cf9f012cd31f1788bb67a7e">addCircle</a>(<span class="keyword">const</span> <a class="code" href="struct_point.html">Point</a>&amp;, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp;) = 0;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a2c15210c900f08dc4df86838dc507f7e">removeLast</a>() = 0;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="class_i_model.html#a5b0e1c712866c277dbae6196e4d13b3e">draw</a>(<a class="code" href="ipainter_8h.html#a27b8ed31dabea41ddb4c9339ed37bada">IPainterSptr</a>) <span class="keyword">const</span> = 0;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;};</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="imodel_8h.html#a7d8b6fc623d40f17bc4c5ac47db5ab2d">   63</a></span>&#160;<span class="keyword">using</span> <a class="code" href="imodel_8h.html#a7d8b6fc623d40f17bc4c5ac47db5ab2d">IModelSptr</a> = std::shared_ptr&lt;IModel&gt;;</div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aiprimitive_8h_html"><div class="ttname"><a href="iprimitive_8h.html">iprimitive.h</a></div></div>
 <div class="ttc" id="aclass_i_model_html_aae3da291eb4410de6965ae73da65cd77"><div class="ttname"><a href="class_i_model.html#aae3da291eb4410de6965ae73da65cd77">IModel::~IModel</a></div><div class="ttdeci">virtual ~IModel()=default</div></div>
 <div class="ttc" id="aclass_i_model_html_a4fbb14206d292e9923aff45b034a775f"><div class="ttname"><a href="class_i_model.html#a4fbb14206d292e9923aff45b034a775f">IModel::openModel</a></div><div class="ttdeci">virtual void openModel(std::string &amp;)=0</div><div class="ttdoc">Open suite from file.</div></div>
-<div class="ttc" id="aclass_i_model_html_a8b8a487fc4e2e529c5af0489e9145dc3"><div class="ttname"><a href="class_i_model.html#a8b8a487fc4e2e529c5af0489e9145dc3">IModel::addPoint</a></div><div class="ttdeci">virtual void addPoint(const point &amp;)=0</div><div class="ttdoc">Add point to suite.</div></div>
+<div class="ttc" id="aimodel_8h_html_a7d8b6fc623d40f17bc4c5ac47db5ab2d"><div class="ttname"><a href="imodel_8h.html#a7d8b6fc623d40f17bc4c5ac47db5ab2d">IModelSptr</a></div><div class="ttdeci">std::shared_ptr&lt; IModel &gt; IModelSptr</div><div class="ttdef"><b>Definition:</b> imodel.h:63</div></div>
+<div class="ttc" id="aclass_i_model_html_a7f679b6d0b05da39107b354031195adb"><div class="ttname"><a href="class_i_model.html#a7f679b6d0b05da39107b354031195adb">IModel::addPoint</a></div><div class="ttdeci">virtual void addPoint(const Point &amp;)=0</div><div class="ttdoc">Add Point to suite.</div></div>
 <div class="ttc" id="aclass_i_model_html_a41686c26ae5f24972501721084fc5923"><div class="ttname"><a href="class_i_model.html#a41686c26ae5f24972501721084fc5923">IModel::newModel</a></div><div class="ttdeci">virtual void newModel()=0</div><div class="ttdoc">Create new suite.</div></div>
+<div class="ttc" id="aclass_i_model_html_ad23d0ce83cf9f012cd31f1788bb67a7e"><div class="ttname"><a href="class_i_model.html#ad23d0ce83cf9f012cd31f1788bb67a7e">IModel::addCircle</a></div><div class="ttdeci">virtual void addCircle(const Point &amp;, const int &amp;)=0</div><div class="ttdoc">Add circle to suite.</div></div>
 <div class="ttc" id="aclass_i_model_html_a8a04ee3e185230cc1d741bb9ac6770dd"><div class="ttname"><a href="class_i_model.html#a8a04ee3e185230cc1d741bb9ac6770dd">IModel::saveModel</a></div><div class="ttdeci">virtual void saveModel()=0</div><div class="ttdoc">Save current suite.</div></div>
-<div class="ttc" id="aclassdot_html"><div class="ttname"><a href="classdot.html">dot</a></div><div class="ttdef"><b>Definition:</b> base_types.h:5</div></div>
+<div class="ttc" id="aclass_i_model_html_a5b0e1c712866c277dbae6196e4d13b3e"><div class="ttname"><a href="class_i_model.html#a5b0e1c712866c277dbae6196e4d13b3e">IModel::draw</a></div><div class="ttdeci">virtual void draw(IPainterSptr) const =0</div><div class="ttdoc">Redraw of suite.</div></div>
 <div class="ttc" id="aclass_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Here is doing monitoring.</div><div class="ttdef"><b>Definition:</b> observable.h:10</div></div>
-<div class="ttc" id="aclass_i_model_html_af76cc1b425382625fdb1b2fd0ed55e4e"><div class="ttname"><a href="class_i_model.html#af76cc1b425382625fdb1b2fd0ed55e4e">IModel::addLine</a></div><div class="ttdeci">virtual void addLine(const point &amp;, const dot &amp;)=0</div><div class="ttdoc">Add line to suite.</div></div>
-<div class="ttc" id="aclasspoint_html"><div class="ttname"><a href="classpoint.html">point</a></div><div class="ttdef"><b>Definition:</b> base_types.h:11</div></div>
-<div class="ttc" id="aclass_i_model_html_a1f7e17d6d047d4cdb59cc0037b07c881"><div class="ttname"><a href="class_i_model.html#a1f7e17d6d047d4cdb59cc0037b07c881">IModel::addCircle</a></div><div class="ttdeci">virtual void addCircle(const point &amp;, const int &amp;)=0</div><div class="ttdoc">Add circle to suite.</div></div>
+<div class="ttc" id="aipainter_8h_html_a27b8ed31dabea41ddb4c9339ed37bada"><div class="ttname"><a href="ipainter_8h.html#a27b8ed31dabea41ddb4c9339ed37bada">IPainterSptr</a></div><div class="ttdeci">std::shared_ptr&lt; IPainter &gt; IPainterSptr</div><div class="ttdef"><b>Definition:</b> ipainter.h:42</div></div>
+<div class="ttc" id="aclass_i_model_html_a613a00f72758e623d0f523b7dd17b718"><div class="ttname"><a href="class_i_model.html#a613a00f72758e623d0f523b7dd17b718">IModel::addLine</a></div><div class="ttdeci">virtual void addLine(const Point &amp;, const Point &amp;)=0</div><div class="ttdoc">Add line to suite.</div></div>
 <div class="ttc" id="aclass_i_model_html_a2c15210c900f08dc4df86838dc507f7e"><div class="ttname"><a href="class_i_model.html#a2c15210c900f08dc4df86838dc507f7e">IModel::removeLast</a></div><div class="ttdeci">virtual void removeLast()=0</div><div class="ttdoc">Removes last shape from suite.</div></div>
-<div class="ttc" id="aclass_i_model_html_ab922edb0fd1e1547a4675e8409ab795a"><div class="ttname"><a href="class_i_model.html#ab922edb0fd1e1547a4675e8409ab795a">IModel::draw</a></div><div class="ttdeci">virtual void draw(std::shared_ptr&lt; IPainter &gt;) const =0</div><div class="ttdoc">Redraw of suite.</div></div>
-<div class="ttc" id="aclass_i_model_html"><div class="ttname"><a href="class_i_model.html">IModel</a></div><div class="ttdoc">Here is model for keeping primitive objects.</div><div class="ttdef"><b>Definition:</b> imodel.h:11</div></div>
+<div class="ttc" id="astruct_point_html"><div class="ttname"><a href="struct_point.html">Point</a></div><div class="ttdef"><b>Definition:</b> base_types.h:6</div></div>
+<div class="ttc" id="aobservable_8h_html"><div class="ttname"><a href="observable_8h.html">observable.h</a></div></div>
+<div class="ttc" id="aclass_i_model_html"><div class="ttname"><a href="class_i_model.html">IModel</a></div><div class="ttdoc">Here is model for keeping primitive objects.</div><div class="ttdef"><b>Definition:</b> imodel.h:12</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">

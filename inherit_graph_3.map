@@ -1,4 +1,7 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node1" href="$class_i_painter.html" title="Here is painter for drawing primitive objects." alt="" coords="5,5,76,32"/>
-<area shape="rect" id="node2" href="$class_painter_of_console.html" title=" " alt="" coords="124,5,259,32"/>
+<area shape="rect" id="node1" href="$class_i_primitive_object.html" title="Here is interface is common for all primitive objects." alt="" coords="5,56,132,83"/>
+<area shape="rect" id="node2" href="$class_primitive_object.html" title=" " alt="" coords="180,56,303,83"/>
+<area shape="rect" id="node3" href="$class_circle_primitive.html" title=" " alt="" coords="351,5,469,32"/>
+<area shape="rect" id="node4" href="$class_line_primitive.html" title=" " alt="" coords="356,56,464,83"/>
+<area shape="rect" id="node5" href="$class_point_primitive.html" title=" " alt="" coords="353,107,467,133"/>
 </map>

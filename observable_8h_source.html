@@ -72,7 +72,7 @@ $(function() {
 <div class="contents">
 <a href="observable_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../interfaces/iview.h&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="iview_8h.html">iview.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;list&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;memory&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
@@ -82,11 +82,11 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="class_observable.html#ab3559b2daa90b06b123089508b3d193d">Observable</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_observable.html#a058acb5a674eba2b96648c66a27440d8">~Observable</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_observable.html#abd0e78412875ba942816f97b87526edc">   16</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#abd0e78412875ba942816f97b87526edc">subscribe</a>(std::shared_ptr&lt;IView&gt; in_observer) noexcept {</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_observable.html#abdd608cc75f9f24e40affd3946686fa5">   16</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#abdd608cc75f9f24e40affd3946686fa5">subscribe</a>(<a class="code" href="iview_8h.html#a282a3dbf7e2ab0a131719db983c542ab">IViewSptr</a> in_observer) noexcept {</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        observers.push_back(in_observer);</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_observable.html#afe4f6a600679d79fd0d3380ce3b2e4ca">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#afe4f6a600679d79fd0d3380ce3b2e4ca">unsubscribe</a>(std::shared_ptr&lt;IView&gt; in_observer) noexcept {</div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_observable.html#a84e576e7b292346c810bcb3419420466">   20</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#a84e576e7b292346c810bcb3419420466">unsubscribe</a>(<a class="code" href="iview_8h.html#a282a3dbf7e2ab0a131719db983c542ab">IViewSptr</a> in_observer) noexcept {</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        observers.remove_if([in_observer](std::weak_ptr&lt;IView&gt; &amp;obs) {</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;            <span class="keywordflow">return</span> obs.expired() || obs.lock() == in_observer;</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        });</div>
@@ -94,22 +94,25 @@ $(function() {
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
 <div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="class_observable.html#a0829616e8ca61845f7c990e86d961e3e">   26</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_observable.html#a0829616e8ca61845f7c990e86d961e3e">notifyUpdate</a>() noexcept {</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;obs : observers) {</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;            <span class="keywordflow">if</span> (!obs.expired()) {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                obs.lock()-&gt;update();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            }</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::list&lt;std::weak_ptr&lt;IView&gt;&gt; observers;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;            <span class="keywordflow">if</span> (<span class="keyword">auto</span> sptr = obs.lock())</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                sptr-&gt;update();</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    std::list&lt;std::weak_ptr&lt;IView&gt;&gt; observers;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;};</div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_observable_html_afe4f6a600679d79fd0d3380ce3b2e4ca"><div class="ttname"><a href="class_observable.html#afe4f6a600679d79fd0d3380ce3b2e4ca">Observable::unsubscribe</a></div><div class="ttdeci">void unsubscribe(std::shared_ptr&lt; IView &gt; in_observer) noexcept</div><div class="ttdef"><b>Definition:</b> observable.h:20</div></div>
-<div class="ttc" id="aclass_observable_html_abd0e78412875ba942816f97b87526edc"><div class="ttname"><a href="class_observable.html#abd0e78412875ba942816f97b87526edc">Observable::subscribe</a></div><div class="ttdeci">void subscribe(std::shared_ptr&lt; IView &gt; in_observer) noexcept</div><div class="ttdef"><b>Definition:</b> observable.h:16</div></div>
+<div class="ttc" id="aiview_8h_html"><div class="ttname"><a href="iview_8h.html">iview.h</a></div></div>
+<div class="ttc" id="aclass_observable_html_abdd608cc75f9f24e40affd3946686fa5"><div class="ttname"><a href="class_observable.html#abdd608cc75f9f24e40affd3946686fa5">Observable::subscribe</a></div><div class="ttdeci">void subscribe(IViewSptr in_observer) noexcept</div><div class="ttdef"><b>Definition:</b> observable.h:16</div></div>
 <div class="ttc" id="aclass_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdoc">Here is doing monitoring.</div><div class="ttdef"><b>Definition:</b> observable.h:10</div></div>
 <div class="ttc" id="aclass_observable_html_a0829616e8ca61845f7c990e86d961e3e"><div class="ttname"><a href="class_observable.html#a0829616e8ca61845f7c990e86d961e3e">Observable::notifyUpdate</a></div><div class="ttdeci">void notifyUpdate() noexcept</div><div class="ttdef"><b>Definition:</b> observable.h:26</div></div>
 <div class="ttc" id="aclass_observable_html_ab3559b2daa90b06b123089508b3d193d"><div class="ttname"><a href="class_observable.html#ab3559b2daa90b06b123089508b3d193d">Observable::Observable</a></div><div class="ttdeci">Observable()=default</div></div>
 <div class="ttc" id="aclass_observable_html_a058acb5a674eba2b96648c66a27440d8"><div class="ttname"><a href="class_observable.html#a058acb5a674eba2b96648c66a27440d8">Observable::~Observable</a></div><div class="ttdeci">virtual ~Observable()=default</div></div>
+<div class="ttc" id="aiview_8h_html_a282a3dbf7e2ab0a131719db983c542ab"><div class="ttname"><a href="iview_8h.html#a282a3dbf7e2ab0a131719db983c542ab">IViewSptr</a></div><div class="ttdeci">std::shared_ptr&lt; IView &gt; IViewSptr</div><div class="ttdef"><b>Definition:</b> iview.h:20</div></div>
+<div class="ttc" id="aclass_observable_html_a84e576e7b292346c810bcb3419420466"><div class="ttname"><a href="class_observable.html#a84e576e7b292346c810bcb3419420466">Observable::unsubscribe</a></div><div class="ttdeci">void unsubscribe(IViewSptr in_observer) noexcept</div><div class="ttdef"><b>Definition:</b> observable.h:20</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Создано системой &#160;<a href="http://www.doxygen.org/index.html">

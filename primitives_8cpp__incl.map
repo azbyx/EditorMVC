@@ -1,11 +1,11 @@
 <map id="sources/primitives.cpp" name="sources/primitives.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="75,5,245,32"/>
-<area shape="rect" id="node2" href="$primitives_8h.html" title=" " alt="" coords="76,80,244,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="44,155,124,181"/>
-<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="148,155,327,181"/>
-<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="82,229,246,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="271,229,348,256"/>
-<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,304,181,331"/>
-<area shape="rect" id="node8" title=" " alt="" coords="205,304,264,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="60,379,127,405"/>
+<area shape="rect" id="node1" title=" " alt="" coords="73,5,243,32"/>
+<area shape="rect" id="node2" href="$primitives_8h.html" title=" " alt="" coords="108,80,208,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="62,155,142,181"/>
+<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="167,155,264,181"/>
+<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="133,229,215,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="221,304,298,331"/>
+<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,304,113,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="138,304,197,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="26,379,93,405"/>
 </map>

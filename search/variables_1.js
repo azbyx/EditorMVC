@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['location_217',['location',['../class_primitive_object.html#aae5b3f14505f71a56642961b84356d80',1,'PrimitiveObject']]]
+  ['makeobjects_219',['makeObjects',['../struct_registry_objects.html#aec115d4ac9707ca3e7de682d799d2727',1,'RegistryObjects']]]
 ];

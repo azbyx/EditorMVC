@@ -1,7 +1,8 @@
 <map id="headers/painter.h" name="headers/painter.h">
-<area shape="rect" id="node1" title=" " alt="" coords="86,5,221,32"/>
-<area shape="rect" id="node2" href="$base__types_8h.html" title=" " alt="" coords="5,155,181,181"/>
-<area shape="rect" id="node4" href="$ipainter_8h.html" title=" " alt="" coords="131,80,295,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="60,229,127,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="205,155,264,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="45,5,180,32"/>
+<area shape="rect" id="node2" href="$base__types_8h.html" title=" " alt="" coords="5,155,113,181"/>
+<area shape="rect" id="node4" href="$ipainter_8h.html" title=" " alt="" coords="118,80,201,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="26,229,93,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="138,155,197,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="221,155,298,181"/>
 </map>

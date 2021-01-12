@@ -1,13 +1,13 @@
 <map id="headers/view.h" name="headers/view.h">
-<area shape="rect" id="node1" title=" " alt="" coords="285,5,405,32"/>
-<area shape="rect" id="node2" href="$imodel_8h.html" title=" " alt="" coords="265,80,425,107"/>
-<area shape="rect" id="node3" href="$iprimitive_8h.html" title=" " alt="" coords="156,155,335,181"/>
-<area shape="rect" id="node9" href="$observable_8h.html" title=" " alt="" coords="359,155,534,181"/>
-<area shape="rect" id="node4" href="$ipainter_8h.html" title=" " alt="" coords="82,229,246,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="271,229,348,256"/>
-<area shape="rect" id="node5" href="$base__types_8h.html" title=" " alt="" coords="5,304,181,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="205,304,264,331"/>
-<area shape="rect" id="node6" title=" " alt="" coords="60,379,127,405"/>
-<area shape="rect" id="node10" href="$iview_8h.html" title=" " alt="" coords="372,229,521,256"/>
-<area shape="rect" id="node11" title=" " alt="" coords="545,229,588,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="227,5,347,32"/>
+<area shape="rect" id="node2" href="$imodel_8h.html" title=" " alt="" coords="248,80,327,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="239,304,317,331"/>
+<area shape="rect" id="node4" href="$iprimitive_8h.html" title=" " alt="" coords="152,155,249,181"/>
+<area shape="rect" id="node9" href="$observable_8h.html" title=" " alt="" coords="341,155,447,181"/>
+<area shape="rect" id="node5" href="$ipainter_8h.html" title=" " alt="" coords="117,229,199,256"/>
+<area shape="rect" id="node6" href="$base__types_8h.html" title=" " alt="" coords="5,304,113,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="138,304,197,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="26,379,93,405"/>
+<area shape="rect" id="node10" href="$iview_8h.html" title=" " alt="" coords="376,229,444,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="469,229,511,256"/>
 </map>

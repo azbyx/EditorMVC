@@ -1,7 +1,7 @@
 <map id="interfaces/icontroller.h" name="interfaces/icontroller.h">
-<area shape="rect" id="node1" title=" " alt="" coords="259,5,427,32"/>
-<area shape="rect" id="node2" href="$controller_8h.html" title=" " alt="" coords="212,80,363,107"/>
-<area shape="rect" id="node4" href="$gtests_8cpp.html" title=" " alt="" coords="355,155,497,181"/>
-<area shape="rect" id="node3" href="$controller_8cpp.html" title=" " alt="" coords="5,155,169,181"/>
-<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="194,155,330,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="81,5,249,32"/>
+<area shape="rect" id="node2" href="$gtests_8cpp.html" title=" " alt="" coords="5,155,148,181"/>
+<area shape="rect" id="node3" href="$controller_8h.html" title=" " alt="" coords="163,80,313,107"/>
+<area shape="rect" id="node4" href="$controller_8cpp.html" title=" " alt="" coords="172,155,336,181"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="361,155,497,181"/>
 </map>

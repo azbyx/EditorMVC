@@ -1,23 +1,23 @@
 <map id="headers/base_types.h" name="headers/base_types.h">
-<area shape="rect" id="node1" title=" " alt="" coords="475,5,639,32"/>
-<area shape="rect" id="node2" href="$icontroller_8h.html" title=" " alt="" coords="5,379,173,405"/>
-<area shape="rect" id="node7" href="$ipainter_8h.html" title=" " alt="" coords="481,80,633,107"/>
-<area shape="rect" id="node20" href="$painter_8h.html" title=" " alt="" coords="650,155,785,181"/>
-<area shape="rect" id="node3" href="$controller_8h.html" title=" " alt="" coords="403,453,554,480"/>
-<area shape="rect" id="node5" href="$gtests_8cpp.html" title=" " alt="" coords="449,528,591,555"/>
-<area shape="rect" id="node4" href="$controller_8cpp.html" title=" " alt="" coords="261,528,425,555"/>
-<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="784,528,920,555"/>
-<area shape="rect" id="node8" href="$iprimitive_8h.html" title=" " alt="" coords="459,155,626,181"/>
-<area shape="rect" id="node9" href="$imodel_8h.html" title=" " alt="" coords="531,379,679,405"/>
-<area shape="rect" id="node14" href="$ifactory_8h.html" title=" " alt="" coords="270,229,421,256"/>
-<area shape="rect" id="node18" href="$primitives_8h.html" title=" " alt="" coords="465,229,621,256"/>
-<area shape="rect" id="node10" href="$view_8h.html" title=" " alt="" coords="784,453,904,480"/>
-<area shape="rect" id="node12" href="$model_8h.html" title=" " alt="" coords="629,453,760,480"/>
-<area shape="rect" id="node11" href="$view_8cpp.html" title=" " alt="" coords="944,528,1077,555"/>
-<area shape="rect" id="node13" href="$model_8cpp.html" title=" " alt="" coords="616,528,760,555"/>
-<area shape="rect" id="node15" href="$factory_8h.html" title=" " alt="" coords="249,304,383,331"/>
-<area shape="rect" id="node16" href="$factory_8cpp.html" title=" " alt="" coords="360,379,507,405"/>
-<area shape="rect" id="node17" href="$registry_8h.html" title=" " alt="" coords="197,379,336,405"/>
-<area shape="rect" id="node19" href="$primitives_8cpp.html" title=" " alt="" coords="459,304,629,331"/>
-<area shape="rect" id="node21" href="$painter_8cpp.html" title=" " alt="" coords="755,229,903,256"/>
+<area shape="rect" id="node1" title=" " alt="" coords="613,5,777,32"/>
+<area shape="rect" id="node2" href="$icontroller_8h.html" title=" " alt="" coords="788,379,956,405"/>
+<area shape="rect" id="node7" href="$ipainter_8h.html" title=" " alt="" coords="505,80,657,107"/>
+<area shape="rect" id="node20" href="$painter_8h.html" title=" " alt="" coords="571,155,706,181"/>
+<area shape="rect" id="node3" href="$gtests_8cpp.html" title=" " alt="" coords="722,528,865,555"/>
+<area shape="rect" id="node4" href="$controller_8h.html" title=" " alt="" coords="562,453,713,480"/>
+<area shape="rect" id="node5" href="$controller_8cpp.html" title=" " alt="" coords="534,528,698,555"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="373,528,509,555"/>
+<area shape="rect" id="node8" href="$iprimitive_8h.html" title=" " alt="" coords="283,155,450,181"/>
+<area shape="rect" id="node9" href="$ifactory_8h.html" title=" " alt="" coords="27,229,178,256"/>
+<area shape="rect" id="node15" href="$imodel_8h.html" title=" " alt="" coords="339,379,487,405"/>
+<area shape="rect" id="node18" href="$primitives_8h.html" title=" " alt="" coords="230,229,386,256"/>
+<area shape="rect" id="node10" href="$factory_8h.html" title=" " alt="" coords="7,304,142,331"/>
+<area shape="rect" id="node11" href="$factory_8cpp.html" title=" " alt="" coords="168,379,315,405"/>
+<area shape="rect" id="node12" href="$registry_8h.html" title=" " alt="" coords="5,379,144,405"/>
+<area shape="rect" id="node13" href="$model_8h.html" title=" " alt="" coords="212,453,343,480"/>
+<area shape="rect" id="node14" href="$model_8cpp.html" title=" " alt="" coords="48,528,192,555"/>
+<area shape="rect" id="node16" href="$view_8h.html" title=" " alt="" coords="367,453,487,480"/>
+<area shape="rect" id="node17" href="$view_8cpp.html" title=" " alt="" coords="216,528,349,555"/>
+<area shape="rect" id="node19" href="$primitives_8cpp.html" title=" " alt="" coords="166,304,335,331"/>
+<area shape="rect" id="node21" href="$painter_8cpp.html" title=" " alt="" coords="565,229,713,256"/>
 </map>
