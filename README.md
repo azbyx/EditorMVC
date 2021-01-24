@@ -1,9 +1,9 @@
-# Домашнее задание 06
+# Домашнее задание 04
 
 [![Build Status](https://travis-ci.com/azbyx/EditorMVC.svg?branch=master&status=created)](https://travis-ci.com/azbyx/EditorMVC)
 [ ![Download](https://api.bintray.com/packages/azbyx/azbyx/EditorMVC/images/download.svg) ](https://bintray.com/azbyx/azbyx/EditorMVC/_latestVersion)
 
-## Задание 4
+## Архитектурный паттерн MVC
 
 Спроектировать простейший графический векторный редактор. Подготовить макеты классов,
 отражающих структуру будущего проекта.
